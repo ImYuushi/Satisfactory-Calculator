@@ -13,8 +13,11 @@ Simply run frontend.py on a python interpreter and follow the instructions
 ## Example:
 
 Recipe: "Reinforced Iron Plate"
+
 Amount: 1
+
 Output: [('Iron Plate', 3.0), ('Screw', 3.0), ('Iron Rod', 2.0), ('Iron Ingot', 4.0)]
+
 Which means to produce one batch (in the case of RIP, that would be 5/min), we need: 
 - 4 Smelters Producing Iron
 - 2 Constructors Producing Iron Rods
@@ -22,6 +25,9 @@ Which means to produce one batch (in the case of RIP, that would be 5/min), we n
 - 3 Constructors Producing Iron Plates
 
 Recipe: "Reinforced Iron Plate"
+
 Amount: 1
+
 Alt Recipe: "Steel Screw" 
+
 Output: [('Iron Plate', 1.5), ('alt Steel Screw', 0.23076923076923078), ('Iron Ingot', 1.5), ('Steel Beam', 0.07692307692307693), ('Steel Ingot', 0.10256410256410256)]
