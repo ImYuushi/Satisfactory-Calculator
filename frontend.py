@@ -26,9 +26,18 @@ while True:
         continue
     altRecipes =  []
     if (opt == 2):
+        try:
+            kkk = int(input("How many different alt Recipes do you want to add?"))
+        except ValueError:
+            print("Not an Integer")
+            continue
+        
         s = input("Enter Alt Recipe Names in this Format: X, Y, Z (No Duplicates): ")
         print()
-        s = s.split(",")
+        if (kkk == 1):
+            s = [s]
+        else:
+            s = s.split(",")
         clean_input = []
         for i in s:
             e = i
@@ -37,8 +46,9 @@ while True:
                 e = e[1:]
             while e.endswith(" "):
                 e = e[:-1]
-            clean_input += "alt " + e 
+            clean_input += [("alt " + e )]
+            print(clean_input)
         altRecipes = clean_input
     output = backend.Query.queryAlt(mat, altRecipes)
-    output_amount = [(a, amount * b) for (a,b) in output]
+    output_amount = [(a, round(amount * b,3)) for (a,b) in output]
     print(output_amount)
