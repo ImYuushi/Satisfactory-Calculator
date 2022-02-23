@@ -30,4 +30,4 @@ Amount: 1
 
 Alt Recipe: "Steel Screw" 
 
-Output: [('Iron Plate', 1.5), ('alt Steel Screw', 0.23076923076923078), ('Iron Ingot', 1.5), ('Steel Beam', 0.07692307692307693), ('Steel Ingot', 0.10256410256410256)]
+Output: [('Iron Plate', 1.5), ('alt Steel Screw', 0.231), ('Iron Ingot', 1.5), ('Steel Beam', 0.077), ('Steel Ingot', 0.103)]
